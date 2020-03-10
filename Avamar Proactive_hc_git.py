@@ -19,7 +19,7 @@ for command in commands:
         time.sleep(1) #wait enough for writing to (hopefully) be finished
         output1 = channel.recv(99)
         output=output1.decode('utf-8')
-        while 'admin@savamar1:~/#' not in str(output.lower()):
+        while 'admin@avamarname:~/#' not in str(output.lower()):
             time.sleep(2)
             output1 = channel.recv(999)
             output=output1.decode('utf-8')
